@@ -19,12 +19,12 @@ export default function Navlinks() {
 		if (location.pathname === path) {
 			return (
 				`${baseStyle} border-white text-white ` +
-				"md:border-emerald-500 md:text-emerald-500"
+				"md:border-purple-500 md:text-purple-500"
 			);
 		} else {
 			return (
-				`${baseStyle} border-slate-900 text-slate-500 hover:text-white duration-200 ` +
-				"md:hover:border-emerald-500 md:hover:text-emerald-500"
+				`${baseStyle} border-slate-500 text-slate-500 hover:text-white duration-200 ` +
+				"md:hover:border-purple-500 md:hover:text-purple-500"
 			);
 		}
 	};
