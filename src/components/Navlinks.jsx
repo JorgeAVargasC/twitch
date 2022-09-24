@@ -36,14 +36,14 @@ export default function Navlinks() {
 					Hi, Jhon Doe
 				</li>
 
-				<li className="h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full">
+				<li className="mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full">
 					<Link to={"/"} className={activeLink("/")} onClick={() => setOpen(false)}>
 						<HiHome className="w-8 h-auto mx-4 md:hidden" />
 						Home
 					</Link>
 				</li>
 
-				<li className="h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full">
+				<li className="mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full">
 					<Link
 						to={"/games"}
 						className={activeLink("/games")}
@@ -54,7 +54,7 @@ export default function Navlinks() {
 					</Link>
 				</li>
 
-				<li className="h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full">
+				<li className="mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full">
 					<Link
 						to={"/top-games"}
 						className={activeLink("/top-games")}

@@ -28,7 +28,7 @@ export default function Home() {
 					"First of all I want to thank you for this{" "}
 					<span className="text-purple-400">great opportunity!</span>. <br /> I have grown
 					professionally with the <span className="text-purple-400">construction</span> of
-					this project".<span className="text-purple-400"> -Jorge Vargas</span>
+					this project". <span className="text-purple-400"> -Jorge Vargas</span>
 				</p>
 			</div>
 		</div>
