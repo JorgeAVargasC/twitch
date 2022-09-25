@@ -1,7 +1,17 @@
 import React from "react";
+import { useEffect } from "react";
+import { get } from "../api";
 
 export default function Games() {
+
 	const img = "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-285x380.jpg";
+
+	useEffect(() => {
+		get("/games")
+		.then((data) => {
+			console.log(data);
+		});
+	},[]);
 
 	return (
 		<div className="w-11/12 mt-20 mb-20 flex flex-col justify-center items-center">
@@ -23,64 +33,7 @@ export default function Games() {
 						<p className="mb-1">name</p>
 						<p className="mb-2 text-white bg-purple-500 px-2 rounded-full w-fit">{`$ ${40000}`}</p>
 					</div>
-				</div>
-
-				{/* Game Card */}
-				<div className="animate__animated animate__fadeInUp item rounded-lg flex flex-col justify-between bg-slate-800 hover:scale-105 duration-200">
-					<div className="flex flex-col justify-center items-center rounded-lg h-40 bg-purple-500 hover:cursor-pointer">
-						<img className="rounded-lg w-full h-40 object-cover" src={img} alt="Valorant" />
-					</div>
-					<div className="flex flex-col p-4">
-						<p className="mb-1">name</p>
-						<p className="mb-2 text-white bg-purple-500 px-2 rounded-full w-fit">{`$ ${40000}`}</p>
-					</div>
-				</div>
-
-				{/* Game Card */}
-				<div className="animate__animated animate__fadeInUp item rounded-lg flex flex-col justify-between bg-slate-800 hover:scale-105 duration-200">
-					<div className="flex flex-col justify-center items-center rounded-lg h-40 bg-purple-500 hover:cursor-pointer">
-						<img className="rounded-lg w-full h-40 object-cover" src={img} alt="Valorant" />
-					</div>
-					<div className="flex flex-col p-4">
-						<p className="mb-1">name</p>
-						<p className="mb-2 text-white bg-purple-500 px-2 rounded-full w-fit">{`$ ${40000}`}</p>
-					</div>
-				</div>
-
-				{/* Game Card */}
-				<div className="animate__animated animate__fadeInUp item rounded-lg flex flex-col justify-between bg-slate-800 hover:scale-105 duration-200">
-					<div className="flex flex-col justify-center items-center rounded-lg h-40 bg-purple-500 hover:cursor-pointer">
-						<img className="rounded-lg w-full h-40 object-cover" src={img} alt="Valorant" />
-					</div>
-					<div className="flex flex-col p-4">
-						<p className="mb-1">name</p>
-						<p className="mb-2 text-white bg-purple-500 px-2 rounded-full w-fit">{`$ ${40000}`}</p>
-					</div>
-				</div>
-
-				{/* Game Card */}
-				<div className="animate__animated animate__fadeInUp item rounded-lg flex flex-col justify-between bg-slate-800 hover:scale-105 duration-200">
-					<div className="flex flex-col justify-center items-center rounded-lg h-40 bg-purple-500 hover:cursor-pointer">
-						<img className="rounded-lg w-full h-40 object-cover" src={img} alt="Valorant" />
-					</div>
-					<div className="flex flex-col p-4">
-						<p className="mb-1">name</p>
-						<p className="mb-2 text-white bg-purple-500 px-2 rounded-full w-fit">{`$ ${40000}`}</p>
-					</div>
-				</div>
-
-				{/* Game Card */}
-				<div className="animate__animated animate__fadeInUp item rounded-lg flex flex-col justify-between bg-slate-800 hover:scale-105 duration-200">
-					<div className="flex flex-col justify-center items-center rounded-lg h-40 bg-purple-500 hover:cursor-pointer">
-						<img className="rounded-lg w-full h-40 object-cover" src={img} alt="Valorant" />
-					</div>
-					<div className="flex flex-col p-4">
-						<p className="mb-1">name</p>
-						<p className="mb-2 text-white bg-purple-500 px-2 rounded-full w-fit">{`$ ${40000}`}</p>
-					</div>
-				</div>
-
-				
+				</div>				
 
 			</div>
 		</div>

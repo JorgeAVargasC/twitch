@@ -1,1 +1,6 @@
-export const baseURL = ""
+export const authURL = 'https://id.twitch.tv/oauth2'
+export const baseURL = 'https://api.twitch.tv/helix'
+export const clientID = 'jpdchmhiytnafe3r0x3sjuimg2lac6'
+export const clientSecret = 'xdk108vbiv22hs761aihiuu0ltv5do'
+export const contentType = 'application/x-www-form-urlencoded'
+export const grantType = 'client_credentials'
