@@ -50,7 +50,7 @@ export default function Navlinks() {
 						onClick={() => setOpen(false)}
 					>
 						<FaGamepad className="w-8 h-auto mx-4 md:hidden" />
-						Games
+						Search
 					</Link>
 				</li>
 
@@ -61,7 +61,7 @@ export default function Navlinks() {
 						onClick={() => setOpen(false)}
 					>
 						<AiOutlineOrderedList className="w-8 h-auto mx-4 md:hidden" />
-						Top Games
+						Games
 					</Link>
 				</li>
 			</ul>
