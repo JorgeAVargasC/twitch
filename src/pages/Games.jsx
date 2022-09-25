@@ -93,7 +93,7 @@ export default function Games() {
 				<input
 					ref={searchRef}
 					onChange={() => generalSearch()}
-					className="w-full rounded-md mb-4 text-slate-900 focus:border-purple-500 focus:border"
+					className="w-full h-14 focus:border-purple-500 duration-300 rounded-md mb-4 bg-slate-900 text-slate-300 "
 					placeholder="Search"
 					type="search"
 					name="search"
@@ -107,7 +107,9 @@ export default function Games() {
 						{games?.length !== 0 ? (
 							games.map((game) => {
 								return (
-									<li className="flex flex-row items-center px-6 py-2 border-b border-slate-700 w-full">
+									<li 
+									onClick={() => openModal(game.id)}
+									className="flex flex-row items-center px-6 py-2 border-b border-slate-700 w-full duration-200 hover:bg-slate-700 hover:cursor-pointer hover:text-slate-300">
 										<img
 											alt={game.name}
 											className="w-10 h-auto rounded-md object-contain group-hover:scale-110 transition duration-300 ease-in-out"
@@ -146,6 +148,7 @@ export default function Games() {
 						<li className="px-6 py-2 border-b border-gray-200 w-full">A second item</li>
 						<li className="px-6 py-2 border-b border-gray-200 w-full">A third item</li>
 						<li className="px-6 py-2 border-b border-gray-200 w-full">A fourth item</li>
+
 						<li className="px-6 py-2 w-full rounded-b-lg">And a fifth one</li> */}
 					</ul>
 				</div>
