@@ -75,7 +75,7 @@ export default function TopGames() {
 
 			<div className="w-11/12 mt-20 mb-20 flex flex-col justify-center items-center">
 				<div className="animate__animated animate__fadeInDown p-5 w-full flex flex-col items-center justify-center rounded-lg mb-4 bg-gradient-to-r from-purple-600 to-purple-900">
-					<h2 className="text-2xl">Top Games</h2>
+					<h2 className="text-2xl">Top {games.length} Games</h2>
 				</div>
 
 				{/* Top Games Container */}
@@ -93,7 +93,7 @@ export default function TopGames() {
 								>
 									<div className="rounded-xl z-40 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
 										<div>
-											<div className="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+											<div className="p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
 												<div className="font-bold">{game.name}</div>
 											</div>
 										</div>
