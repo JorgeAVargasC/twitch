@@ -14,8 +14,8 @@ export default function App() {
 	useEffect(() => {
 		postAuth("/token")
 		.then(({access_token}) => {
-			localStorage.setItem("token", JSON.stringify(access_token));
-			// console.log(JSON.parse(localStorage.getItem("token")));
+			localStorage.setItem("token", access_token);
+			console.log(access_token);
 		});
 	},[]);
 

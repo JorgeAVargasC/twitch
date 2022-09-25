@@ -27,13 +27,12 @@ const instance = axios.create({
     baseURL: baseURL,
     headers: {
         "Client-Id": clientID,
-        "Authorization": "Bearer " + localStorage.getItem("access_token"),
     }
 });
 
-async function get(url) {
+async function get(url, data) {
     try {
-        const result = await instance.get(url);
+        const result = await instance.get(url, data);
         return result.data;
     } catch (error) {
         throw error.response.data;

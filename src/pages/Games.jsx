@@ -1,17 +1,32 @@
 import React from "react";
-import { useEffect } from "react";
-import { get } from "../api";
+import { useEffect, useState } from "react";
+import { get, postAuth } from "../api";
 
 export default function Games() {
 
 	const img = "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-285x380.jpg";
 
-	useEffect(() => {
-		get("/games")
-		.then((data) => {
-			console.log(data);
-		});
-	},[]);
+	const [token, setToken] = useState(localStorage.getItem("token"));
+
+	// useEffect(() => {
+	// 	postAuth("/token")
+	// 	.then(({access_token}) => {
+	// 		setToken(access_token);
+	// 		console.log(access_token);
+	// 	});
+	// },[token]);
+
+	// useEffect(() => {
+	// 	console.log(localStorage.getItem("token"));
+	// 	get("/games?id=493057",{
+	// 		headers: {
+	// 			"Authorization": `Bearer ${token}`
+	// 		}
+	// 	})
+	// 	.then((data) => {
+	// 		console.log(data);
+	// 	});
+	// },[token]);
 
 	return (
 		<div className="w-11/12 mt-20 mb-20 flex flex-col justify-center items-center">

@@ -19,7 +19,7 @@ export default function Home() {
 					alt="ImgHome"
 				/>
 				<button
-					onClick={() => navigate("/games")}
+					onClick={() => navigate("/top-games")}
 					className="animate__animated animate__fadeInDown md:order-last bg-purple-500 mb-4 border-purple-500 border-2 rounded flex items-center justify-center px-6 py-2 hover:bg-purple-600 duration-200 hover:border-purple-600"
 				>
 					Get Started!
