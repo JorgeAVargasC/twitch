@@ -21,8 +21,13 @@ export default function TopGames() {
 			},
 		}).then(({ data }) => {
 			setGames(data);
+			console.log(data);
 		});
 	}, [token]);
+
+	const openModal = (gameId) => {
+		console.log(gameId);
+	};
 
 	return (
 		<div className="w-11/12 mt-20 mb-20 flex flex-col justify-center items-center">
@@ -38,14 +43,19 @@ export default function TopGames() {
 				{games?.length !== 0 ? (
 					games.map((game) => {
 						return (
-							<div key={game.id} className="animate__animated animate__fadeInUp item rounded-lg flex flex-col justify-between bg-slate-800 hover:scale-105 duration-200">
-								<div className="flex flex-col justify-center items-center rounded-lg bg-purple-500 hover:cursor-pointer">
-									<img
-										className="rounded-lg w-full h-full"
-										src={game.box_art_url.replace("{width}", "285").replace("{height}", "380")}
-										alt={game.name}
-									/>
+							<div className="overflow-hidden bg-red-400 cursor-pointer rounded-xl relative group">
+								<div className="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end">
+									<div>
+										<div className="transform-gpu p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+											<div className="font-bold">{game.name}</div>
+										</div>
+									</div>
 								</div>
+								<img
+									alt={game.name}
+									className="w-full h-full group-hover:scale-110 transition duration-300 ease-in-out"
+									src={game.box_art_url.replace("{width}", "285").replace("{height}", "380")}
+								/>
 							</div>
 						);
 					})
