@@ -26,9 +26,9 @@ export default function App () {
         </NavbarProvider>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/search' element={<Search />} />
-            <Route path='/top-games' element={<TopGames />} />
+            <Route path='/twitch' element={<Home />} />
+            <Route path='/twitch/search' element={<Search />} />
+            <Route path='/twitch/top-games' element={<TopGames />} />
           </Routes>
         </Suspense>
       </Router>

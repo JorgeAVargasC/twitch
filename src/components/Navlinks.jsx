@@ -27,7 +27,11 @@ export default function Navlinks () {
         </li>
 
         <li className='mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full'>
-          <Link to='/' className={activeLink('/')} onClick={() => setOpen(false)}>
+          <Link
+            to='/twitch'
+            className={activeLink('/twitch')}
+            onClick={() => setOpen(false)}
+          >
             <HiHome className='w-8 h-auto mx-4 md:hidden' />
             Home
           </Link>
@@ -35,8 +39,8 @@ export default function Navlinks () {
 
         <li className='mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full'>
           <Link
-            to='/search'
-            className={activeLink('/search')}
+            to='/twitch/search'
+            className={activeLink('/twitch/search')}
             onClick={() => setOpen(false)}
           >
             <FaGamepad className='w-8 h-auto mx-4 md:hidden' />
@@ -46,8 +50,8 @@ export default function Navlinks () {
 
         <li className='mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full'>
           <Link
-            to='/top-games'
-            className={activeLink('/top-games')}
+            to='/twitch/top-games'
+            className={activeLink('/twitch/top-games')}
             onClick={() => setOpen(false)}
           >
             <AiOutlineOrderedList className='w-8 h-auto mx-4 md:hidden' />
