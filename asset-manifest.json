@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/twitch/static/css/main.f4bab194.css",
-    "main.js": "/twitch/static/js/main.b88b59c2.js",
+    "main.js": "/twitch/static/js/main.cd75d246.js",
     "static/js/491.efd17440.chunk.js": "/twitch/static/js/491.efd17440.chunk.js",
     "static/js/565.97bef545.chunk.js": "/twitch/static/js/565.97bef545.chunk.js",
     "static/js/531.fc61ac58.chunk.js": "/twitch/static/js/531.fc61ac58.chunk.js",
     "static/js/856.0f26963c.chunk.js": "/twitch/static/js/856.0f26963c.chunk.js",
     "static/media/Home.svg": "/twitch/static/media/Home.7510ae54c5f825e2a1a8e234174e7282.svg",
-    "static/media/Logo.svg": "/twitch/static/media/Logo.d9aed74c2d79220f4f6d5fe15cfd8734.svg",
+    "static/media/Logo.svg": "/twitch/static/media/Logo.7bb00bd92cab752f45103429c5aa859c.svg",
     "index.html": "/twitch/index.html",
     "main.f4bab194.css.map": "/twitch/static/css/main.f4bab194.css.map",
-    "main.b88b59c2.js.map": "/twitch/static/js/main.b88b59c2.js.map",
+    "main.cd75d246.js.map": "/twitch/static/js/main.cd75d246.js.map",
     "491.efd17440.chunk.js.map": "/twitch/static/js/491.efd17440.chunk.js.map",
     "565.97bef545.chunk.js.map": "/twitch/static/js/565.97bef545.chunk.js.map",
     "531.fc61ac58.chunk.js.map": "/twitch/static/js/531.fc61ac58.chunk.js.map",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.f4bab194.css",
-    "static/js/main.b88b59c2.js"
+    "static/js/main.cd75d246.js"
   ]
 }
